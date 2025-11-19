@@ -8,11 +8,9 @@ public class HangmanGame {
     String enzyme5 = ("amylase");
     String enzyme6 = ("lipase");
 
-
     public String selectEnzyme() {
         int enzymeIndex = (int) (Math.random() * 6) + 1;
         String enzyme = "";
-
 
         if (enzymeIndex == 1) {
             enzyme = enzyme1;
@@ -45,7 +43,6 @@ public class HangmanGame {
         }
         return blankWord;
     }
-
 
     public String evaluateGuesses(String enzyme, String blankWord) {
         String newBlankWord = "";
